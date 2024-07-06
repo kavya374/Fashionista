@@ -1,0 +1,80 @@
+.l{
+  padding:2rem;
+  background-color: rgb(230, 232, 233);
+  margin:auto;
+  margin-top:10rem;
+  margin-bottom:12rem;
+}
+.login-form-container{
+  display:flex;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content:space-between;
+}
+.login {
+  padding: 1rem;
+ 
+  background-color: #1f1f38;
+  
+}
+.loginform{
+  padding:1rem;
+}
+.loginform h2{
+  text-align:center;
+  color:white;
+}
+.form-group {
+  margin-bottom: 15px;
+
+}
+
+label {
+  display:flex;
+  flex-direction: column;
+  color:white;
+  margin-bottom: 5px;
+}
+
+input[type='email'],
+input[type='password'] {
+  width:225px;
+  padding:0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginform button {
+  background-color: #1f1f38;
+  color: white;
+  border: solid white 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:5rem;
+}
+
+.loginform button:hover {
+  background-color: #fcfcfc;
+  color:#1f1f38;
+}
+
+
+.Signup{
+  padding:3.5rem;
+  text-align: center;
+}
+p {
+  cursor: pointer;
+  color: #1f1f38;
+}
+
+@media screen and (max-width:950px) {
+  .login-form-container{
+    display:flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    align-items: center;
+   
+  }
+}

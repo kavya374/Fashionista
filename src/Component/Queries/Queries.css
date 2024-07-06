@@ -1,0 +1,45 @@
+
+.acc {
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+  margin:3rem;
+  margin-top:10rem;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; 
+}
+
+.accordion-item.active {
+  max-height: 200px; 
+}
+
+.accordion-header{
+  display:flex;
+  justify-content: space-between;
+  background-color: #f0f0f0; 
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+.accordion-header h2{
+  /* Example of background color */
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 17px;
+  margin:0;
+}
+.accordion-header button{
+ border:none;
+ padding-right:1rem;
+}
+
+.accordion-body{
+  padding:1rem;
+}
+

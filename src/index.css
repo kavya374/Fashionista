@@ -1,0 +1,67 @@
+
+body{
+  font-family: Inter, sans-serif;
+  background-color:rgb(211, 10, 121);
+  background: linear-gradient(115deg, #40b3c7, #ffd6ed);
+  margin:0;
+  padding:0;
+  outline:0;
+  border:0;
+  box-sizing:border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+:root{
+  --font-primary: "GT Flexa Ext", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-secondary: "Peak Rounded";
+  --font-tertiary: "GT Flexa Medium";
+}
+html{
+  scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+
+
+/**@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  outline:0;
+  border:0;
+  box-sizing:border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --colod-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --container-width-1g: 70%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: All 400ms ease;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--color-bg);
+    color:var(--color-white);
+    line-height: 1.7;
+  }**/
