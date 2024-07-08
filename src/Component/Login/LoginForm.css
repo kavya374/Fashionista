@@ -1,7 +1,6 @@
 
 html, body {
-  margin: 0;
-  padding: 0;
+ 
   background: linear-gradient(115deg, #40b3c7, #ffd6ed);
 }
 .login-form-outercontainer{
@@ -10,10 +9,12 @@ html, body {
   margin:auto;
   margin-top:10rem;
   margin-bottom:12rem;
+  max-width: fit-content;
 }
   .login-form-container {
     display:flex;
   background-color: aquamarine;
+  max-width: fit-content;
   }
   
   .login {
