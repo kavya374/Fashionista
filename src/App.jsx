@@ -11,10 +11,10 @@ import Products from "./Component/Products/Products";
 function App() {
   return (
     <div>
-      <Router>
+       <Router basename="/Fashionista">
         <Navbar1 />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Fashionista" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/queries" element={<Queries />} />
