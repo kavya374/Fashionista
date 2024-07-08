@@ -1,3 +1,6 @@
+body{
+  background: linear-gradient( #40b3c7, #ffd6ed);
+}
 .wishlist-container {
   padding: 2rem;
   margin-top:5rem;

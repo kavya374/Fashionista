@@ -75,10 +75,23 @@ a {
   display:none;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (min-width:740px) and (max-width:950px) {
+  .navb{
+    display:flex;
+    flex-direction:column; 
+  }
+  .navb1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    padding:0.3rem 7.2rem;
+    padding-bottom:0.5rem;
+  }
   .navb1 div{
     color:white;
     font-size:1.7rem;
+
   }
   .navb1 p{
     margin:0;
@@ -86,7 +99,13 @@ a {
     color:white;
   }
   .navb2{
-    display:none;
+    display:flex;
+    align-items: center;
+    gap:1.2rem;
+    border-color: none;
+    background-color:#1f1f38;
+    padding:0.8rem 1.2rem;
+    color:white;
   }
 
   .navb4{
@@ -100,21 +119,59 @@ a {
 
   }
   .navb3{
-    display:flex;
-    gap:0.5rem;
-    padding:0.3rem 0.6rem;
-    
+    display:none;
   }
-  .navb3 div{
-    border:solid 2px white;
-    padding:0.5rem 1rem;
-    border-radius: 3rem;
+ 
+}
+
+
+@media screen and (max-width:740px) {
+  .navb{
+    display:flex;
+    flex-direction: column; 
+  }
+  .navb1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    padding:0.3rem 7.2rem;
+    padding-bottom:0.5rem;
+    border-bottom:solid white 1px;
+  }
+  .navb1 div{
+    color:white;
+    font-size:1.7rem;
+
+  }
+  .navb1 p{
+    margin:0;
+    font-size:1.7rem;
     color:white;
   }
-  .navb3 div:hover{
-    background-color: white;
-    color:#1f1f38;
-    cursor: pointer;
+  .navb2{
+    display:flex;
+    align-items: center;
+    gap:1.2rem;
+    border-color: none;
+    background-color:#1f1f38;
+    padding:0.8rem 1.2rem;
+    color:white;
   }
+
+  .navb4{
+    display:flex;
+    align-items: center;
+    gap:1.9rem;
+    background-color: rgb(251, 249, 249);
+    padding:1rem 1.9rem;
+    border-radius:3rem;
+    color:#1f1f38;
+
+  }
+  .navb3{
+    display:none;
+  }
+ 
 }
 

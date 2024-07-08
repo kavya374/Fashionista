@@ -1,38 +1,59 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Home.css";
 import homeimg from "../Assets/homeimg.png";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare, FaYoutubeSquare, FaLinkedin } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const containerRef = useRef(null);
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/products'); 
+  };
+  const scrollLeft = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft -= containerRef.current.clientWidth;
+    }
+  };
+
+  const scrollRight = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft += containerRef.current.clientWidth;
+    }
+  };
+
   return (
-    <div class="home">
-      <div class="home1">
-        <div class="heading">
-          <h1>
-            BECAUSE <br />
-            BEING{" "}
-            <span style={{ fontWeight: "bold", color: "rgb(211, 10, 121)" }}>
-              STYLISH
-            </span>
-            <br />
-            NEVER SUCKS
-          </h1>
-          <div className="btn">GET STARTED & BUY FROM FASHIONISTA</div>
+    <div className="home">
+      <div className="home1">
+        <div className="headingdiv">
+          <div className="heading">
+            <h1>
+              BECAUSE <br />
+              BEING{" "}
+              <span style={{ fontWeight: "bold", color: "rgb(211, 10, 121)" }}>
+                STYLISH
+              </span>
+              <br />
+              NEVER SUCKS
+            </h1>
+          </div>
+          <div className="btn" onClick={handleClick}>GET STARTED & BUY FROM FASHIONISTA</div>
         </div>
 
         <div className="imgdiv">
-          <img src={homeimg}></img>
+          <img src={homeimg} alt="Home Image" />
         </div>
       </div>
 
       <div className="Arrival">
         <h3>New Arrivals</h3>
-        <div class="latestimg">
-          <img
+        <div className="latestimg" ref={containerRef}>
+         
+        <img
             src={
-              "https://m.media-amazon.com/images/I/61VdudS+wBL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/711AatnujVL._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
           <img
@@ -50,12 +71,62 @@ const Home = () => {
               "https://m.media-amazon.com/images/I/81boXIR+s3L._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
+            <img
+            src={
+              "https://m.media-amazon.com/images/I/71E5GSrmRAL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+            <img
+            src={
+              "https://m.media-amazon.com/images/I/51RgKA1pC1L._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+            <img
+            src={
+              "https://m.media-amazon.com/images/I/61Pu5bS4zYL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+            <img
+            src={
+              "https://m.media-amazon.com/images/I/81KpE2l+ehL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+            <img
+            src={
+              "https://m.media-amazon.com/images/I/61mRmbJ-j3L._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
         </div>
       </div>
 
       <div className="Arrival">
         <h3>Trending Collections</h3>
         <div class="latestimg">
+        <img
+            src={
+              "https://m.media-amazon.com/images/I/71ZqIMS9USL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+          <img
+            src={
+              "https://m.media-amazon.com/images/I/71ZqIMS9USL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+          <img
+            src={
+              "https://m.media-amazon.com/images/I/812Q0bMv7WL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+          <img
+            src={
+              "https://m.media-amazon.com/images/I/71mRYklHcjL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
+          <img
+            src={
+              "https://m.media-amazon.com/images/I/71EW3oNFprL._AC_UL480_FMwebp_QL65_.jpg"
+            }
+          ></img>
           <img
             src={
               "https://m.media-amazon.com/images/I/612pnIERmkL._AC_UL480_FMwebp_QL65_.jpg"
@@ -73,35 +144,46 @@ const Home = () => {
           ></img>
           <img
             src={
-              "https://m.media-amazon.com/images/I/71ZqIMS9USL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/812Q0bMv7WL._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
+          
         </div>
       </div>
 
       <div className="Arrival">
         <h3>Shop By Categories</h3>
-        <div class="latestimg">
+        <div className="latestimg">
           <img
             src={
               "https://m.media-amazon.com/images/I/61wyfIo5XvL._AC_UL480_FMwebp_QL65_.jpg"
             }
-          ></img>
+            alt="Category 1"
+          />
           <img
             src={
-              "https://m.media-amazon.com/images/I/71tF9O0WgwL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/712naEHTSUL._AC_UL480_FMwebp_QL65_.jpg"
             }
-          ></img>
+            alt="Category 1"
+          />
           <img
             src={
-              "https://m.media-amazon.com/images/I/51ndJwiUnoL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/51qqv3viQ+L._AC_UL480_FMwebp_QL65_.jpg"
             }
-          ></img>
+            alt="Category 1"
+          />
           <img
             src={
-              "https://m.media-amazon.com/images/I/71IA8O5waeL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/71-mU6d7lmL._AC_UL480_FMwebp_QL65_.jpg"
             }
-          ></img>
+            alt="Category 1"
+          />
+          <img
+            src={
+              "https://m.media-amazon.com/images/I/51byp5tQ86L._AC_UL480_FMwebp_QL65_.jpg"
+            }
+            alt="Category 1"
+          />
         </div>
       </div>
 
@@ -123,16 +205,13 @@ const Home = () => {
           being fashionable never sucks!
         </div>
         <div className="ico">
-        <FaSquareInstagram />
-        <FaYoutube />
-        <FaLinkedin />
-
+          <FaInstagramSquare />
+          <FaYoutubeSquare />
+          <FaLinkedin />
         </div>
-        
       </div>
     </div>
   );
 };
 
 export default Home;
-

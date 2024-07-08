@@ -104,7 +104,7 @@ const Queries = () => {
                 onChange={(e) => setText(e.target.value)}
                 required
                  rows="5" 
-                cols="31"
+                cols="44"
               />
             </div>
             <button type="submit">Submit</button>
