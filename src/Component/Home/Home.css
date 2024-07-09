@@ -64,11 +64,8 @@ transform: rotate(0);
 .latestimg{
   display:flex;
   align-items: center;
-  justify-content:center;
   gap:1rem;
   overflow-x: scroll;
-  display: flex;
-  overflow-x: scroll; 
   scroll-behavior: smooth; 
   width: 100%; 
 }
@@ -136,7 +133,6 @@ transform: rotate(0);
   .latestimg{
     display:flex;
     align-items: center;
-    justify-content:center;
     gap:1rem;
     overflow-x: scroll;
     display: flex;
@@ -204,7 +200,6 @@ transform: rotate(0);
   .latestimg{
     display:flex;
     align-items: center;
-    justify-content:center;
     gap:1rem;
     overflow-x: scroll;
     scroll-behavior: smooth; 

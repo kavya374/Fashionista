@@ -10,7 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/products'); 
+    navigate('/Fashionista/products'); 
   };
   const scrollLeft = () => {
     if (containerRef.current) {
@@ -104,12 +104,12 @@ const Home = () => {
         <div class="latestimg">
         <img
             src={
-              "https://m.media-amazon.com/images/I/71ZqIMS9USL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/81gwJt2K+gL._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
           <img
             src={
-              "https://m.media-amazon.com/images/I/71ZqIMS9USL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/61G3m-Hy-uL._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
           <img
