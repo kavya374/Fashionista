@@ -53,7 +53,7 @@ const Home = () => {
          
         <img
             src={
-              "https://m.media-amazon.com/images/I/711AatnujVL._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/61mRmbJ-j3L._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
           <img
@@ -93,7 +93,7 @@ const Home = () => {
           ></img>
             <img
             src={
-              "https://m.media-amazon.com/images/I/61mRmbJ-j3L._AC_UL480_FMwebp_QL65_.jpg"
+              "https://m.media-amazon.com/images/I/61fIE1NF9VL._AC_UL480_FMwebp_QL65_.jpg"
             }
           ></img>
         </div>
